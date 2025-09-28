@@ -1033,3 +1033,10 @@ button {
     cursor: pointer;                   /* Pointer on hover */
     transition: background 0.3s ease;
 }
+.about-content{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    text-justify: auto;
+}
