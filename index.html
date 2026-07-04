@@ -1,149 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiran's portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#hero">Kiran Kumar Koduri</a>
-            </div>
-            <ul class="nav-links">
-               <button><li><a href="#about">About</a></li></button>
-                <button><li><a href="#skills">Skills</a></li></button>
-               <button> <li><a href="#projects">Projects</a></li></button>
-                <button><li><a href="#education">Education</a></li></button>
-                <button><li><a href="#contact">Contact</a></li></button>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiran Kumar Koduri | Java Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Kiran Kumar Koduri, a Java Full Stack Developer specializing in Spring Boot, Spring Security and MySQL."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container navbar">
+        <div class="logo">
+          <a href="#hero">Kiran Kumar Koduri</a>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
     </header>
 
     <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Hi, I'm Kiran</h1>
-            <p>Passionate Web Developer looking for new opportunities</p>
-            <a href="#contact" class="btn">Get in Touch</a>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/kiran-kumar-koduri" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/kirankoduri11" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:kodurikrn11@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
+      <div class="hero-content">
+        <p class="hero-intro">Hi, I'm</p>
+        <h1>Kiran Kumar Koduri</h1>
+        <p class="hero-tagline">
+          Java Full Stack Developer building secure, scalable web applications
+          with Spring Boot, Spring Security &amp; MySQL
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+          <a
+            href="assets/kiran.cv.main.pdf"
+            target="_blank"
+            class="btn outline-btn"
+            >Download Resume <i class="fas fa-download"></i
+          ></a>
         </div>
+        <div class="social-links">
+          <a
+            href="https://linkedin.com/in/kirankoduri11"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/kirankoduri11"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:kodurikrn11@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
     </section>
 
     <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="kiran_prof.jpg" alt="Your Profile Picture" class="profile-pic">
-                <p>
-                    Hello! I'm a highly motivated and enthusiastic fresher with a solid foundation in both web and software development. My journey into technology is driven by a genuine passion for creating efficient, scalable, and user-friendly applications that solve real-world problems.
-
-                    During my academic pursuits and personal projects, I've actively honed my skills across various aspects of the development lifecycle. I thrive on challenges and am constantly seeking new opportunities to expand my knowledge base and apply my theoretical understanding to practical scenarios.</p>
-               
-            </div> 
-            <a href="kiran.cv.main.pdf" target="_blank" class="btn secondary-btn">Download Resume <i class="fas fa-download"></i></a>
-
+      <div class="container">
+        <h2 class="fade-in-on-scroll">About Me</h2>
+        <div class="about-grid">
+          <div class="about-image fade-in-on-scroll">
+            <img
+              src="kiran_prof.jpg"
+              alt="Kiran Kumar Koduri"
+              class="profile-pic"
+            />
+          </div>
+          <div class="about-text fade-in-on-scroll">
+            <p>
+              I'm a Java Full Stack Developer who enjoys building secure,
+              scalable web applications using Spring Boot. I have hands-on
+              experience developing REST APIs, implementing authentication with
+              Spring Security, JWT and BCrypt password hashing, and modeling
+              relational schemas on MySQL with JPA/Hibernate.
+            </p>
+            <p>
+              My recent work includes an Online Exam System with JWT-based auth
+              and role-based access control, and Smart Expense Splitter
+              (SplitEase), a full-stack expense-splitting app with a
+              debt-simplification algorithm, deployed on Render with a TiDB
+              Cloud database. I also have hands-on cybersecurity exposure —
+              vulnerability assessment with Burp Suite and OWASP methodology —
+              and I'm currently sharpening my Data Structures &amp; Algorithms
+              and system design skills ahead of interviews.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li><i class="fas fa-code"></i> C</li>
-                        <li><i class="fas fa-code"></i> Python</li>
-                        <li><i class="fas fa-code"></i> JavaScript</li>
-                        <li><i class="fas fa-code"></i> Html</li>
-                        <li><i class="fas fa-code"></i> Css</li>
-                        </ul>
-                </div>
-                
-                
-                <div clasName="flex ">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li><i class="fas fa-users"></i> Teamwork</li>
-                        <li><i class="fas fa-lightbulb"></i> Problem-Solving</li>
-                        <li><i class="fas fa-comments"></i> Communication</li>
-                        </ul>
-                </div>
-            </div>
+    <section id="skills" class="skills-section bg-light-gray">
+      <div class="container">
+        <h2 class="fade-in-on-scroll">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category fade-in-on-scroll">
+            <h3><i class="fas fa-code"></i>Languages</h3>
+            <ul>
+              <li><i class="fas fa-circle-dot"></i> Java</li>
+              <li><i class="fas fa-circle-dot"></i> C</li>
+              <li><i class="fas fa-circle-dot"></i> JavaScript</li>
+            </ul>
+          </div>
+          <div class="skill-category fade-in-on-scroll">
+            <h3><i class="fas fa-server"></i>Backend</h3>
+            <ul>
+              <li><i class="fas fa-circle-dot"></i> Spring Boot</li>
+              <li><i class="fas fa-circle-dot"></i> Spring Security</li>
+              <li><i class="fas fa-circle-dot"></i> Spring Data JPA</li>
+              <li><i class="fas fa-circle-dot"></i> REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-category fade-in-on-scroll">
+            <h3><i class="fas fa-laptop-code"></i>Frontend &amp; Database</h3>
+            <ul>
+              <li><i class="fas fa-circle-dot"></i> React</li>
+              <li>
+                <i class="fas fa-circle-dot"></i> HTML, CSS &amp; Bootstrap
+              </li>
+              <li><i class="fas fa-circle-dot"></i> MySQL</li>
+            </ul>
+          </div>
+          <div class="skill-category fade-in-on-scroll">
+            <h3><i class="fas fa-shield-halved"></i>Cybersecurity</h3>
+            <ul>
+              <li>
+                <i class="fas fa-circle-dot"></i> Vulnerability Assessment
+              </li>
+              <li><i class="fas fa-circle-dot"></i> Web Security</li>
+              <li><i class="fas fa-circle-dot"></i> Burp Suite</li>
+              <li><i class="fas fa-circle-dot"></i> OWASP Methodology</li>
+            </ul>
+          </div>
+          <div class="skill-category fade-in-on-scroll">
+            <h3><i class="fas fa-diagram-project"></i>Core Concepts</h3>
+            <ul>
+              <li><i class="fas fa-circle-dot"></i> OOPs</li>
+              <li>
+                <i class="fas fa-circle-dot"></i> Data Structures &amp;
+                Algorithms
+              </li>
+              <li><i class="fas fa-circle-dot"></i> System Design Basics</li>
+            </ul>
+          </div>
+          <div class="skill-category fade-in-on-scroll">
+            <h3><i class="fas fa-toolbox"></i>Tools</h3>
+            <ul>
+              <li><i class="fas fa-circle-dot"></i> Git &amp; GitHub</li>
+              <li><i class="fas fa-circle-dot"></i> Maven</li>
+              <li><i class="fas fa-circle-dot"></i> Postman</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Vulnerabilities Checking on IXIGO App</h3>
-                    
-                    <p>"Conducted a comprehensive security assessment of the IXIGO travel booking mobile application to identify potential vulnerabilities and ensure data 
-                        protection for end-users. Successfully identified and documented multiple security issues with mitigation strategies, enhancing the app’s resilience 
-                        against common attack vectors. Using Burp Suite, OWASP ZAP, MobSF, APKTool, Android Studio, Wireshark"</p>
-                    
-                </div>
-                
-                </div>
+      <div class="container">
+        <h2 class="fade-in-on-scroll">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card fade-in-on-scroll">
+            <div class="project-banner banner-split">
+              <i class="fas fa-receipt"></i>
+            </div>
+            <div class="project-info">
+              <h3>Smart Expense Splitter (SplitEase)</h3>
+              <p class="project-description">
+                A full-stack expense-splitting web app supporting group
+                creation, shared expense tracking, and automatic
+                equal/custom-split cost calculation across multiple users.
+                Includes a debt-simplification algorithm that reduces
+                multi-party balances to a minimal set of settle-up transactions
+                &mdash; replacing O(n&sup2;) pairwise debts with a one-click
+                settle-up flow. Secured with Spring Security and BCrypt password
+                hashing, modeled across 5 normalized entities on MySQL, and
+                deployed on Render with a TiDB Cloud database.
+              </p>
+              <div class="project-tech-stack">
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>JPA</span>
+                <span>MySQL</span>
+                <span>Thymeleaf</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/kirankoduri11/splitease"
+                  target="_blank"
+                  class="btn small-btn primary-btn"
+                >
+                  <i class="fab fa-github"></i>&nbsp;View Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in-on-scroll">
+            <div class="project-banner banner-exam">
+              <i class="fas fa-file-pen"></i>
+            </div>
+            <div class="project-info">
+              <h3>Online Exam System</h3>
+              <p class="project-description">
+                A full-stack backend for an online exam platform with secure
+                user registration using BCrypt password hashing and stateless
+                JWT-based authentication. Implements role-based access control
+                (ADMIN vs STUDENT) with Spring Security, enforcing
+                endpoint-level authorization and record-level ownership checks
+                across REST APIs. Includes a centralized global exception
+                handler and CORS-enabled configuration, returning clean JSON
+                error responses with secrets externalized via environment
+                config.
+              </p>
+              <div class="project-tech-stack">
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>JWT</span>
+                <span>JPA</span>
+                <span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/kirankoduri11/online-exam-system"
+                  target="_blank"
+                  class="btn small-btn primary-btn"
+                >
+                  <i class="fab fa-github"></i>&nbsp;View Source
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="education" class="education-section">
-        <div class="container">
-            <h2>Education</h2>
-
-            
-                <div class="timeline-item">
-                    <h3>Bachelor of Technology at Pace Institute of Technology and Sciences</h3>
-                    <p class="timeline-date">2022 – 2026</p>
-                    <ul>
-                        <li><i class="fas fa-graduation-cap"></i> Participated and Shortlisted in the Smart India Hackathon, a nationwide innovation competition aimed at solving real-world problems posed by government and industry.</li>
-                        <li><i class="fas fa-star"></i> Maintained a consistent CGPA of 7.5+ throughout B.Tech in Electronics and Communication Engineering.</li>
-                    </ul>
-                </div>
-                </div>
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="fade-in-on-scroll">
+          Internships, Trainings &amp; Achievements
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-category experience-card fade-in-on-scroll">
+            <h3><i class="fas fa-shield-halved"></i>Cyber Security Intern</h3>
+            <p class="timeline-date">42 Learns &middot; 2024</p>
+            <ul>
+              <li>
+                <i class="fas fa-circle-dot"></i> Completed a 4-week hands-on
+                cybersecurity internship, practicing ethical hacking techniques
+                including SQL Injection, OS Command Injection and Cross-Site
+                Scripting (XSS).
+              </li>
+              <li>
+                <i class="fas fa-circle-dot"></i> Explored Brute Force attacks,
+                Server-Side Request Forgery (SSRF) and OS backdoor creation to
+                build practical understanding of exploitation and mitigation.
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category experience-card fade-in-on-scroll">
+            <h3>
+              <i class="fas fa-laptop-code"></i>Competitive Coding Trainee
+            </h3>
+            <p class="timeline-date">Codetantra &middot; 2025</p>
+            <ul>
+              <li>
+                <i class="fas fa-circle-dot"></i> Solved 100+ competitive
+                programming problems in Python spanning arrays, strings,
+                recursion and core data structures during a 4-week structured
+                program.
+              </li>
+              <li>
+                <i class="fas fa-circle-dot"></i> Strengthened algorithmic
+                problem-solving through consistent practice on coding challenges
+                and timed assessments.
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category experience-card fade-in-on-scroll">
+            <h3><i class="fas fa-trophy"></i>Smart India Hackathon</h3>
+            <p class="timeline-date">Shortlisted Team Member</p>
+            <ul>
+              <li>
+                <i class="fas fa-circle-dot"></i> Selected as part of a
+                shortlisted team in this nationwide innovation competition,
+                proposing a technology-driven solution to a real-world problem
+                statement.
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="education" class="education-section bg-light-gray">
+      <div class="container">
+        <h2 class="fade-in-on-scroll">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item fade-in-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>B.Tech, Electronics &amp; Communication Engineering</h3>
+              <p class="timeline-date">
+                Pace Institute of Technology and Sciences, Ongole &middot; 2022
+                – 2026
+              </p>
+              <ul>
+                <li><i class="fas fa-star"></i> CGPA: 7.3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item fade-in-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Intermediate</h3>
+              <p class="timeline-date">
+                Sri Chaitanya Junior College, Ongole &middot; 2020 – 2022
+              </p>
+              <ul>
+                <li><i class="fas fa-star"></i> Scored 75%</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item fade-in-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>SSC</h3>
+              <p class="timeline-date">
+                ZPH School, Kanuparthi, Andhra Pradesh &middot; 2020
+              </p>
+              <ul>
+                <li><i class="fas fa-star"></i> Scored 91%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>I'm currently seeking Web developer or Software developer opportunities. Feel free to reach out if you have any questions or just want to connect!</p>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-                <div id="form-status"></div>
-            </form>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> kodurikrn11@gmail.com</p>
-                <p><i class="fas fa-phone"></i> 9701932305</p>
-                <p><i class="fas fa-map-marker-alt"></i> Ongole,India</p>
+      <div class="container">
+        <h2 class="fade-in-on-scroll">Get in Touch</h2>
+        <p class="contact-intro fade-in-on-scroll">
+          I'm currently seeking Java Full Stack Developer opportunities. Feel
+          free to reach out if you have any questions or just want to connect!
+        </p>
+        <div class="contact-grid">
+          <div class="contact-info fade-in-on-scroll">
+            <h3>Contact Info</h3>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:kodurikrn11@gmail.com">kodurikrn11@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone"></i> 9701932305</p>
+            <p><i class="fas fa-map-marker-alt"></i> Ongole, India</p>
+            <div class="social-links-contact">
+              <a
+                href="https://linkedin.com/in/kirankoduri11"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/kirankoduri11"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
+          </div>
+          <div class="contact-form-wrapper fade-in-on-scroll">
+            <h3>Send a Message</h3>
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/your-form-id"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn">
+                Send Message
+              </button>
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
+    <footer class="main-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Kiran Kumar Koduri. All rights
+          reserved.
+        </p>
+        <div class="footer-social">
+          <a
+            href="https://linkedin.com/in/kirankoduri11"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/kirankoduri11"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:kodurikrn11@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
